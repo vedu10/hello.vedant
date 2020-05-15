@@ -1,0 +1,18 @@
+version = 1
+
+test_patterns = [
+    "*test/**",
+    "integration_tests/test*"
+]
+
+exclude_patterns = [
+    "migrations/**",
+    "/dist/*.min.j"
+]
+
+[[analyzers]]
+name = "python"
+enabled = true
+
+  [analyzers.meta]
+  runtime_version = "2.x.x"
